@@ -56,7 +56,7 @@ export const ProductCard = ({ data, DeleteDisplay }: ProductCardType) => {
         className={`min-h-100 max-h-110 flex flex-col bg-white ${ !DeleteDisplay && 'hover:scale-103 hover:shadow' } rounded-lg transition-all duration-200 border overflow-hidden`}
         >
             <img
-            src={url}
+            src={url.replace('/', '')}
             className="h-3/5 mx-auto"
             alt={title}
             />

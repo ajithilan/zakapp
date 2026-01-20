@@ -30,6 +30,7 @@ export const Admin = () => {
                 alert(`No product with ID ${ id } exists!`)
             };
         }
+        else setModifyData(undefined);
     }, [id])
 
     useEffect(() => {

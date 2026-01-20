@@ -34,7 +34,7 @@ function App() {
     <div className="min-h-dvh">
       <img
       className="fixed w-full h-dvh scale-150 opacity-35 -z-10"
-      src="/background-2.svg"
+      src="background-2.svg"
       alt="Svg background"
       />
       <AppContext.Provider value={contextValues}>
