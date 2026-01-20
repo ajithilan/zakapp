@@ -9,7 +9,4 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: "/zakapp/",
-  server: {
-    open: '/products'
-  }
 })

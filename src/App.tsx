@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
 import { Navbar } from "./common/navbar"
 import { Products } from "./routes/products/products"
 import { Admin } from "./routes/admin/admin"
@@ -38,13 +38,13 @@ function App() {
       alt="Svg background"
       />
       <AppContext.Provider value={contextValues}>
-        <BrowserRouter basename="/zakapp">
+        <HashRouter>
           <Navbar/>
           <Routes>
             <Route path="/products" element={<Products/>} />
             <Route path="/admin" element={<Admin/>} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AppContext.Provider>
     </div>
   )
