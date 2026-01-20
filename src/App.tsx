@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from "react-router-dom"
 import { Navbar } from "./common/navbar"
 import { Products } from "./routes/products/products"
 import { Admin } from "./routes/admin/admin"
@@ -41,6 +41,7 @@ function App() {
         <HashRouter>
           <Navbar/>
           <Routes>
+            <Route path="/" element={<Navigate to="/products" replace />} />
             <Route path="/products" element={<Products/>} />
             <Route path="/admin" element={<Admin/>} />
           </Routes>
