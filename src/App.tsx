@@ -38,7 +38,7 @@ function App() {
       alt="Svg background"
       />
       <AppContext.Provider value={contextValues}>
-        <BrowserRouter>
+        <BrowserRouter basename="/zakapp">
           <Navbar/>
           <Routes>
             <Route path="/products" element={<Products/>} />
